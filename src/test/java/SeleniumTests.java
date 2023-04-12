@@ -6,9 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.testng.annotations.Listeners;
+import org.testng.reporters.TestHTMLReporter;
 
 import static org.assertj.core.api.Assertions.*;
-
+@Listeners({TestHTMLReporter.class})
 public class SeleniumTests {
     public static WebDriver _driver = null;
     @Test
