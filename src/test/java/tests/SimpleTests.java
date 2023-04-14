@@ -1,3 +1,5 @@
+package tests;
+
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -16,12 +18,9 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.testng.annotations.Listeners;
-import org.testng.reporters.TestHTMLReporter;
 
 //import org.testng.annotations.Test;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@Listeners({TestHTMLReporter.class})
 public class SimpleTests {
     static Integer id = new Random().nextInt(1000, 100000);
 
